@@ -1,5 +1,7 @@
 # Changelog
 
+## [v1.11.8](https://github.com/carlosgandarez-lavvo/gh-setup/commits/v1.11.8) - 2026-07-02
+
 ## [v1.11.8](https://github.com/k1LoW/gh-setup/compare/v1.11.7...v1.11.8) - 2026-04-20
 - chore(deps): bump k1LoW/gh-setup from 1.11.6 to 1.11.7 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/gh-setup/pull/181
 - chore(deps): bump the dependencies group across 1 directory with 3 updates by @dependabot[bot] in https://github.com/k1LoW/gh-setup/pull/184
