@@ -4,6 +4,10 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   tagpr:
     runs-on: ubuntu-latest
@@ -98,13 +102,13 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/k1low/gh-setup:${{ steps.latest_version.outputs.version }}
-            ghcr.io/k1low/gh-setup:latest
+            ghcr.io/carlosgandarez-lavvo/gh-setup:${{ steps.latest_version.outputs.version }}
+            ghcr.io/carlosgandarez-lavvo/gh-setup:latest
           labels: |
             org.opencontainers.image.name=gh-setup
             org.opencontainers.image.revision=${{ github.sha }}
             org.opencontainers.image.version=${{ steps.latest_version.outputs.version }}
-            org.opencontainers.image.source=https://github.com/k1LoW/gh-setup
+            org.opencontainers.image.source=https://github.com/carlosgandarez-lavvo/gh-setup
 
   release:
     needs: [tagpr, assets, dockerimage]
